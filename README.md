@@ -1,8 +1,9 @@
 # 🥷 halfprice-hunter-agent
 
-An autonomous AI Agent that helps you detect and track **50% off bento boxes** at your local supermarket. Combining OCR + user preferences + timing prediction, this Agent answers the big daily question:
+An autonomous AI Agent that helps you detect and track **50% off bento boxes** at your local supermarket.  
+Combining OCR + user preferences + timing prediction, this Agent answers the big daily question:
 
-> ❓ “Should I go now and grab that bento?”
+> ❓ “Should I go now and grab that bento?”  
 
 ---
 
@@ -31,13 +32,3 @@ git clone https://github.com/your-username/halfprice-hunter-agent.git
 cd halfprice-hunter-agent
 pip install -r requirements.txt
 python main.py
-```
-
-### Telegram Bot
-
-Set your Telegram bot token in the `TELEGRAM_TOKEN` environment variable and run:
-
-```bash
-export TELEGRAM_TOKEN=YOUR_TOKEN
-python telegram_bot.py
-```
