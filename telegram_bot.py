@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TOKEN = "7853503988:AAHlF5odHI7aXZecyKjD40HWvBewjLtmXGQ"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text('请发送便当照片')
@@ -16,9 +16,6 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     await update.message.reply_text('图片已收到')
 
 def main() -> None:
-    if not TOKEN:
-        print('Please set TELEGRAM_TOKEN environment variable.')
-        return
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler('start', start))
     app.add_handler(MessageHandler(filters.PHOTO, handle_photo))

@@ -35,9 +35,8 @@ python main.py
 
 ### Telegram Bot
 
-Set your Telegram bot token in the `TELEGRAM_TOKEN` environment variable and run:
+The Telegram bot token is configured directly inside `telegram_bot.py`. Simply run:
 
 ```bash
-export TELEGRAM_TOKEN=YOUR_TOKEN
 python telegram_bot.py
 ```
